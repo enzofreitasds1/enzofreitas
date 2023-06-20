@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<htmls>
+	<head>
+        <title>Contato - Preecha por favor!</title>
+		<meta charset= "Utf-8"/>
+        <link rel="icon" type="icone/png" href="imagens/rv_pal.jpg">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div class="flex">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html"><button>HOME</button></a>
+                            </li>
+                            <li>
+                                <a href="historia.html"><button>HISTÓRIA</button></a>
+                            </li>
+                            <li>
+                                <a href="premios.html"><button>PRÊMIOS</button></a>
+                            </li>
+                            <li>
+                                <a href="galeria.html"><button>GALERIA</button></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="btn-contato">
+                        <a href="contato.html"><button>CONTATO</button></a>
+                    </div>
+				</div>	
+                <div class="logo">
+                    <a href="#"><img src="imagens/raphaelveiga.png"></a>
+                 </div>
+			</div>
+		</header>
+		<script language="javascript" type="text/javascript">
+			function validar(){
+				var nome = form1.nome.value;
+				var endereço = form1.endereço.value;
+				var telefone = form1.telefone.value;
+				var email = form1.email.value;
+				
+					if (nome== ""){
+					alert('Por favor, Preencha o campo com seu nome!');
+					form1.nome.focus();
+					return false;
+					}
+					
+					if (endereço== ""){
+					alert('Por favor, Preencha o campo com seu endereço!');
+					form1.nome.focus();
+					return false;
+					}
+					
+					if (telefone== ""){
+					alert('Por favor, Preencha o campo com seu telefone!');
+					form1.nome.focus();
+					return false;
+					}
+					
+					if (email== ""){
+					alert('Por favor, Preencha o campo com seu Email!');
+					form1.nome.focus();
+					return false;
+					}
+				}
+			</script>
+	</head>
+	<body>
+        <div class="formtext1">
+			<p>Preencha o formulário a seguir com o seu CONTATO.</p>
+        </div>
+        <div class="form">
+					<form name="form1" action="contato_telafinal.html" method="post">
+							<p>Nome:</p>
+							<input type="text" name="nome" size="30" maxlength="33" placeholder="Digite seu Nome aqui">
+
+							<p>Endereço:</p> 
+
+							<input type="text" name="endereço" size="30" maxlength="30" placeholder="Digite seu Endereço aqui">
+
+	
+							<p>Telefone:</p>
+
+							<input type="text" name="telefone" size="30" maxlength="30" placeholder="Digite seu Telefone aqui">
+							<p>Email:</p>
+
+							<input type="text" name="email" size="30" maxlength="30" placeholder="Digite seu Email aqui">
+					
+							<p>Observações:</p>
+
+							<textarea cols="30" rows="10" name="Observações">
+							</textarea>
+
+                            <div class="immp">
+                                <div class="imtbut1">
+                                    <input type="submit" onclick="return validar()" value="Enviar">
+                                </div>
+                                <div class="imtbut2">
+                                    <input type="reset" name="limpa" value="Limpar">
+                                </div>
+                            </div>
+					</form>
+        </div>
+		<br><br><br><br><br>
+            <footer>
+                <div class="textfooter">
+                    <h5>Enzo Freitas 2023 - &copytodos os direitos reservados</h5>
+                </div>
+            </footer>
+
+	</body>
+</html>
